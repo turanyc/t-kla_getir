@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteRule ^anasayfa index.php [L,NC]
+RewriteRule ^bahcetopragi bahce.php [L,NC]
+RewriteRule ^bypass baypas.php [L,NC]
+RewriteRule ^iletisim contact-block.php [L,NC]
+RewriteRule ^dolgu dolgu.php [L,NC]
+RewriteRule ^galeri galeri.php [L,NC]
+RewriteRule ^kazi kazi.php [L,NC]
+RewriteRule ^nakliyat nakliyat.php [L,NC]
+RewriteRule ^peysaj peysaj.php [L,NC]
+RewriteRule ^hizmetlerimiz index.php#header-section [L,NC]
+

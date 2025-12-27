@@ -1,0 +1,335 @@
+-- --------------------------------------------------------
+-- Sunucu:                       127.0.0.1
+-- Sunucu sürümü:                10.4.32-MariaDB - mariadb.org binary distribution
+-- Sunucu İşletim Sistemi:       Win64
+-- HeidiSQL Sürüm:               12.8.0.6908
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+-- tablo yapısı dökülüyor incebel_db.anasayfa
+CREATE TABLE IF NOT EXISTS `anasayfa` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `anaBaslik` char(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.anasayfa: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `anasayfa` (`id`, `anaBaslik`) VALUES
+	(1, 'Hafriyatta Güven, Hizmette Kalite!');
+
+-- tablo yapısı dökülüyor incebel_db.bahcedb
+CREATE TABLE IF NOT EXISTS `bahcedb` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` char(50) DEFAULT NULL,
+  `madde1` char(50) DEFAULT NULL,
+  `madde2` char(50) DEFAULT NULL,
+  `madde3` char(50) DEFAULT NULL,
+  `foto` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.bahcedb: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `bahcedb` (`id`, `baslik`, `paragraf`, `madde1`, `madde2`, `madde3`, `foto`) VALUES
+	(1, 'Bahce Toprağı', 'Güçlü Makineler ile hizmetinizdeyiz.', '+25 Yıllık Uzmanlık', '+5 Çeşitli Harfiyat Aracı', '150\'den Fazla Proje Teslimi', 'uploads/incebel-15.jpg');
+
+-- tablo yapısı dökülüyor incebel_db.bahcedb2
+CREATE TABLE IF NOT EXISTS `bahcedb2` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` mediumtext DEFAULT NULL,
+  `foto` char(50) DEFAULT NULL,
+  `paragraf2` mediumtext DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.bahcedb2: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `bahcedb2` (`id`, `baslik`, `paragraf`, `foto`, `paragraf2`) VALUES
+	(1, 'Bahçe Toprağı Temini', 'Bahçe düzenlemelerinde ihtiyaç duyulan kaliteli toprağı temin ediyor, projelerinize\r\n        uygun çözümler sunuyoruz. Doğal yapısını koruyan, besin değeri yüksek ve çevre dostu topraklarımız,\r\n        bitkilerinizin sağlıklı gelişimi için idealdir.', 'uploads/sd.jpg', 'Geniş ürün yelpazemizle bahçenizin ihtiyaçlarına en uygun toprağı sunuyoruz. İster\r\n        çiçek, ister sebze, ister çim ekimi için olsun, tüm taleplerinizi karşılayacak nitelikte özel karışımlar\r\n        hazırlıyoruz. Sağlıklı ve estetik bir bahçe için doğru toprak seçimi önemlidir.\r\n      Teslimat süreçlerimizi titizlikle yöneterek istediğiniz miktarda toprağı,\r\n        belirttiğiniz zaman ve adrese ulaştırıyoruz. Doğru uygulama önerileriyle müşterilerimize destek olarak uzun\r\n        ömürlü bahçeler yaratılmasına katkı sağlıyoruz.');
+
+-- tablo yapısı dökülüyor incebel_db.bypassdb
+CREATE TABLE IF NOT EXISTS `bypassdb` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` char(50) DEFAULT NULL,
+  `madde1` char(50) DEFAULT NULL,
+  `madde2` char(50) DEFAULT NULL,
+  `madde3` char(50) DEFAULT NULL,
+  `foto` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.bypassdb: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `bypassdb` (`id`, `baslik`, `paragraf`, `madde1`, `madde2`, `madde3`, `foto`) VALUES
+	(1, 'Baypas', 'Güçlü Makineler ile hizmetinizdeyiz.', '+25 Yıllık Uzmanlık', '+5 Çeşitli Harfiyat Aracı', '150\'den Fazla Proje Teslimi', 'uploads/incebel-10.jpg');
+
+-- tablo yapısı dökülüyor incebel_db.bypassdb2
+CREATE TABLE IF NOT EXISTS `bypassdb2` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` mediumtext DEFAULT NULL,
+  `paragraf2` mediumtext DEFAULT NULL,
+  `foto` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.bypassdb2: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `bypassdb2` (`id`, `baslik`, `paragraf`, `paragraf2`, `foto`) VALUES
+	(1, 'Bypass Hizmetimiz', 'Bypass çalışmaları, altyapı projelerinin en kritik adımlarından biridir. Şirketimiz,\r\n      su, elektrik, doğalgaz ve diğer hatların güvenli bir şekilde devre dışı bırakılarak alternatif güzergâhlara\r\n      aktarılmasında uzmanlaşmıştır. Kesintisiz hizmet akışını sağlamak önceliğimizdir.\r\n    Proje gereksinimlerinize uygun planlama yaparak bypass işlemlerini minimum sürede\r\n      tamamlıyoruz. Modern teknoloji ve ekipmanlarımızla hatların korunmasını sağlıyor, iş süreçlerinizin aksamasını\r\n      önlüyoruz. Hem kamu projelerinde hem de özel sektör ihtiyaçlarında çözüm ortağıyız.', 'Çalışmalarımızda güvenlik ve standartlara uygunluk en öncelikli kriterlerdir.\r\n      Ekiplerimiz, detaylı analizler yaparak altyapınızın en hassas noktalarını belirler ve çözüm üretir. Her aşamada\r\n      profesyonel ve şeffaf bir hizmet sunuyoruz.', 'uploads/sd.jpg');
+
+-- tablo yapısı dökülüyor incebel_db.dolgudb
+CREATE TABLE IF NOT EXISTS `dolgudb` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) NOT NULL DEFAULT '0',
+  `paragraf` char(50) NOT NULL DEFAULT '0',
+  `madde1` char(50) NOT NULL DEFAULT '0',
+  `madde2` char(50) NOT NULL DEFAULT '0',
+  `madde3` char(50) NOT NULL DEFAULT '0',
+  `foto` char(50) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.dolgudb: ~1 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `dolgudb` (`id`, `baslik`, `paragraf`, `madde1`, `madde2`, `madde3`, `foto`) VALUES
+	(1, 'Dolgu', 'Güçlü Makineler ile hizmetinizdeyiz.', '+25 Yıllık Uzmanlıkk', '+5 Çeşitli Harfiyat Aracı', '150\'den Fazla Proje Teslimi', 'uploads/incebel-8.jpg');
+
+-- tablo yapısı dökülüyor incebel_db.dolgudb2
+CREATE TABLE IF NOT EXISTS `dolgudb2` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` mediumtext DEFAULT NULL,
+  `paragraf2` mediumtext DEFAULT NULL,
+  `foto` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.dolgudb2: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `dolgudb2` (`id`, `baslik`, `paragraf`, `paragraf2`, `foto`) VALUES
+	(1, 'Dolgu İşlemleri', 'İnşaat projeleriniz için sağlam ve güvenilir dolgu çözümleri sunuyoruz. Dolgu\r\n      çalışmalarımızda kaliteyi ve dayanıklılığı ön planda tutarak zeminin stabilitesini garanti altına alıyoruz.', 'Projelerinizde ihtiyaç duyduğunuz malzemeleri en uygun şekilde temin ediyor ve hızlı\r\n      bir şekilde uygulamaya geçiyoruz. Yol dolgusu, temel dolgusu veya diğer altyapı ihtiyaçlarında uzman ekibimizle\r\n      yanınızdayız. Müşteri memnuniyetini esas alarak her detayı önemsiyoruz.\r\n   Çevresel faktörlere duyarlı bir şekilde çalışarak sürdürülebilir projelere katkı\r\n      sağlıyoruz. Dolgu işlemleri sırasında kullanılan malzemelerin kalitesini denetliyor ve uzun ömürlü çözümler\r\n      üretiyoruz.', 'uploads/sd.jpg');
+
+-- tablo yapısı dökülüyor incebel_db.galeri
+CREATE TABLE IF NOT EXISTS `galeri` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `foto` char(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=319 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.galeri: ~12 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `galeri` (`id`, `foto`) VALUES
+	(291, 'uploads/3.jpg'),
+	(295, 'uploads/ana ekran.jpg'),
+	(298, 'uploads/11.jpg'),
+	(300, 'uploads/3.jpg'),
+	(309, 'uploads/incebel-15.jpg'),
+	(310, 'uploads/incebel-14.jpg'),
+	(311, 'uploads/incebel-13.jpg'),
+	(312, 'uploads/incebel-11.jpg'),
+	(313, 'uploads/3232.jpeg'),
+	(314, 'uploads/12312.jpeg'),
+	(315, 'uploads/232232.jpeg'),
+	(316, 'uploads/new3.jpeg'),
+	(317, 'uploads/nre3.jpeg'),
+	(318, 'uploads/new-1.jpeg');
+
+-- tablo yapısı dökülüyor incebel_db.hizmetdb
+CREATE TABLE IF NOT EXISTS `hizmetdb` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik1` char(50) NOT NULL DEFAULT '0',
+  `foto1` char(50) NOT NULL DEFAULT '0',
+  `baslik2` char(50) NOT NULL DEFAULT '0',
+  `foto2` char(50) NOT NULL DEFAULT '0',
+  `baslik3` char(50) NOT NULL DEFAULT '0',
+  `foto3` char(50) NOT NULL DEFAULT '0',
+  `baslik4` char(50) NOT NULL DEFAULT '0',
+  `foto4` char(50) NOT NULL DEFAULT '0',
+  `baslik5` char(50) NOT NULL DEFAULT '0',
+  `foto5` char(50) NOT NULL DEFAULT '0',
+  `baslik6` char(50) NOT NULL DEFAULT '0',
+  `foto6` char(50) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.hizmetdb: ~1 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `hizmetdb` (`id`, `baslik1`, `foto1`, `baslik2`, `foto2`, `baslik3`, `foto3`, `baslik4`, `foto4`, `baslik5`, `foto5`, `baslik6`, `foto6`) VALUES
+	(1, 'Kazı Hizmetimiz', 'uploads/incebel-4.jpg', 'Dolgu Hizmetimiz', 'uploads/incebel-5.jpg', 'Peysaj Hizmetimiz', 'uploads/6.jpeg', 'Bypass Hizmetimiz', 'uploads/8.jpg', 'Bahçe Toprağı Hizmetimiz', 'uploads/incebel-6.jpg', 'Nakliyat Hizmetimiz', 'uploads/incebel-7.jpg');
+
+-- tablo yapısı dökülüyor incebel_db.ikincibolum
+CREATE TABLE IF NOT EXISTS `ikincibolum` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `foto` char(50) NOT NULL DEFAULT '0',
+  `baslik` char(50) NOT NULL DEFAULT '0',
+  `paragraf` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.ikincibolum: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `ikincibolum` (`id`, `foto`, `baslik`, `paragraf`) VALUES
+	(1, 'uploads/incebel-2.jpg', 'İleri Düzey Makineler ile Hizmet', 'İncebel Hafriyat, sektördeki en son teknolojiye sahip güçlü makinelerle hizmet sunmaktadır. Bu makineler, her tür zemine uygun kazı yapabilme kapasitesine sahip olup, projelerin en verimli şekilde ilerlemesini sağlar. Yüksek kapasiteli ekskavatörler ve diğer ağır iş makinelerimiz, zorlu koşullarda dahi yüksek performans gösterir, böylece projelerinizdeki zaman kaybını minimize ederiz.');
+
+-- tablo yapısı dökülüyor incebel_db.ilkbolum
+CREATE TABLE IF NOT EXISTS `ilkbolum` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `foto` char(50) DEFAULT NULL,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` longtext DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.ilkbolum: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `ilkbolum` (`id`, `foto`, `baslik`, `paragraf`) VALUES
+	(1, 'uploads/incebel-1.jpg', 'Hafriyat ve Kazı İşlemleri', 'İncebel Hafriyat, yılların tecrübesi ve uzman ekibiyle inşaat sektöründe güvenilir bir çözüm ortağıdır. Altyapı, kazı, dolgu, çevre düzenlemesi ve moloz taşıma gibi hafriyat hizmetlerinde çevreye duyarlı ve teknolojik ekipmanlarla fark yaratmaktadır. Müşteri memnuniyetini ön planda tutan İncebel Hafriyat, projelerinizi zamanında ve bütçenize uygun şekilde tamamlamayı garanti eder. Şirket, her ölçekten projede profesyonel yaklaşımıyla kaliteli hizmet sunarak sektöründe lider olmayı hedeflemektedir.');
+
+-- tablo yapısı dökülüyor incebel_db.kazıdb
+CREATE TABLE IF NOT EXISTS `kazıdb` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` char(50) DEFAULT NULL,
+  `madde1` char(50) DEFAULT NULL,
+  `madde2` char(50) DEFAULT NULL,
+  `madde3` char(50) DEFAULT NULL,
+  `foto` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.kazıdb: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `kazıdb` (`id`, `baslik`, `paragraf`, `madde1`, `madde2`, `madde3`, `foto`) VALUES
+	(1, 'Kazı Hizmetimiz', 'Güçlü Makineler ile hizmetinizdeyiz.', '+25 Yıllık Uzmanlık', '+5 Çeşitli Harfiyat Aracı', '150\'den Fazla Proje Teslimi', 'uploads/7.jpg');
+
+-- tablo yapısı dökülüyor incebel_db.kazıdb2
+CREATE TABLE IF NOT EXISTS `kazıdb2` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) NOT NULL DEFAULT '0',
+  `paragraf` mediumtext NOT NULL,
+  `paragraf2` mediumtext NOT NULL,
+  `foto` char(50) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.kazıdb2: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `kazıdb2` (`id`, `baslik`, `paragraf`, `paragraf2`, `foto`) VALUES
+	(1, 'Kazı Hizmetimizde en iyisiyiz', 'Kazı işlerimizde uzman ekip ve modern ekipmanlarımızla hızlı, güvenli ve çevreye duyarlı çözümler sunuyoruz. Projenizin ihtiyaçlarına uygun kazı planları yaparak, süreçlerin sorunsuza\r\nilerlemesini sağlıyoruz. Temelden yol inşaatına kadar geniş bir yelpazede hizmet veriyoruz.Yeraltı çalışmalarında gerekli izin ve güvenlik önlemlerini eksiksiz bir şekilde yerine getiriyoruz. Profesyonel yaklaşımımız sayesinde her türlü zemin yapısına uygun kazı işlemlerini başarıyla tamamlıyoruz. Projelerinize özel çözümlerle zamandan ve maliyetten tasarruf etmenizi sağlıyoruz.', 'Çevresel etkiyi en aza indirmeyi hedefleyerek sürdürülebilirlik prensipleriyle hareket ediyoruz. Kazı sırasında ortaya çıkan hafriyatı en uygun şekilde bertaraf ediyor ve geri dönüşüm için gerekli  işlemleri uyguluyoruz.', 'uploads/Adsız tasarım (3).jpg');
+
+-- tablo yapısı dökülüyor incebel_db.kullanici
+CREATE TABLE IF NOT EXISTS `kullanici` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `kadi` char(50) CHARACTER SET utf8 COLLATE utf8_turkish_ci NOT NULL,
+  `parola` char(50) NOT NULL,
+  `yetki` tinyint(4) NOT NULL,
+  `email` char(50) NOT NULL,
+  `aktif` bit(1) NOT NULL DEFAULT b'1',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `k_adi` (`kadi`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.kullanici: ~1 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `kullanici` (`id`, `kadi`, `parola`, `yetki`, `email`, `aktif`) VALUES
+	(1, '', '1234', 1, 'incebel-hafriyat@gmail.com', b'1');
+
+-- tablo yapısı dökülüyor incebel_db.logo
+CREATE TABLE IF NOT EXISTS `logo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `foto` char(50) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.logo: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+
+-- tablo yapısı dökülüyor incebel_db.nakliyatdb
+CREATE TABLE IF NOT EXISTS `nakliyatdb` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` char(50) DEFAULT NULL,
+  `madde1` char(50) DEFAULT NULL,
+  `madde2` char(50) DEFAULT NULL,
+  `madde3` char(50) DEFAULT NULL,
+  `foto` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.nakliyatdb: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `nakliyatdb` (`id`, `baslik`, `paragraf`, `madde1`, `madde2`, `madde3`, `foto`) VALUES
+	(1, 'Nakliyat', 'Güçlü Makineler ile hizmetinizdeyiz.', '+25 Yıllık Uzmanlık', '+5 Çeşitli Harfiyat Aracı', '150\'den Fazla Proje Teslimi', 'uploads/6.jpg');
+
+-- tablo yapısı dökülüyor incebel_db.nakliyatdb2
+CREATE TABLE IF NOT EXISTS `nakliyatdb2` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` mediumtext DEFAULT NULL,
+  `paragraf2` mediumtext DEFAULT NULL,
+  `foto` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.nakliyatdb2: ~1 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `nakliyatdb2` (`id`, `baslik`, `paragraf`, `paragraf2`, `foto`) VALUES
+	(1, 'Nakliyat Hizmetimiz', 'Nakliyat hizmetlerimiz, projelerinizin hızlı ve güvenilir şekilde tamamlanması için\r\n      tasarlanmıştır. Hafriyat, dolgu malzemesi ve diğer yüklerin taşınmasında deneyimli ekibimiz ve geniş araç\r\n      filomuzla hizmet sunuyoruz', 'Taşıma süreçlerinde zamanında teslimat ve güvenlik en önemli önceliklerimizdir. Proje\r\n      büyüklüğüne uygun araç seçimleri yaparak maliyetleri optimize ediyor, süreçlerinizi kolaylaştırıyoruz. Hem şehir\r\n      içi hem de şehirlerarası nakliyat çözümleri sunmaktayız.\r\n    Lojistik süreçlerinizi en etkin şekilde yöneterek kesintisiz bir hizmet sağlıyoruz.\r\n      Müşteri odaklı yaklaşımımızla her projeye özel çözümler üretiyor ve işbirliklerinde uzun vadeli güven tesis\r\n      ediyoruz.', 'uploads/sd.jpg');
+
+-- tablo yapısı dökülüyor incebel_db.peysajdb
+CREATE TABLE IF NOT EXISTS `peysajdb` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` char(50) DEFAULT NULL,
+  `madde1` char(50) DEFAULT NULL,
+  `madde2` char(50) DEFAULT NULL,
+  `madde3` char(50) DEFAULT NULL,
+  `foto` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.peysajdb: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `peysajdb` (`id`, `baslik`, `paragraf`, `madde1`, `madde2`, `madde3`, `foto`) VALUES
+	(1, 'Peysaj', 'Güçlü Makineler ile hizmetinizdeyiz.', '+25 Yıllık Uzmanlık', '+5 Çeşitli Harfiyat Aracı', '150\'den Fazla Proje Teslimi', 'uploads/7.jpeg');
+
+-- tablo yapısı dökülüyor incebel_db.peysajdb2
+CREATE TABLE IF NOT EXISTS `peysajdb2` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` mediumtext DEFAULT NULL,
+  `paragraf2` mediumtext DEFAULT NULL,
+  `foto` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.peysajdb2: ~1 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `peysajdb2` (`id`, `baslik`, `paragraf`, `paragraf2`, `foto`) VALUES
+	(1, 'Peysaj', 'Peyzaj projeleriniz için modern ve estetik çözümler sunuyoruz. Yeşil alan\r\n        tasarımlarında uzman ekibimizle hem fonksiyonel hem de görsel açıdan tatmin edici projeler gerçekleştiriyoruz.\r\n        Bahçe düzenleme, yürüyüş yolları, çim ekimi gibi tüm ihtiyaçlarınıza profesyonel destek sağlıyoruz.\r\n      Doğal malzemeler ve sürdürülebilir tasarım ilkelerini birleştirerek çevre dostu peyzaj\r\n        projeleri sunuyoruz. Özel bitki seçimleri ve toprak düzenlemeleriyle mekanınıza hayat katıyoruz. Her aşamada\r\n        detaylı planlama yaparak beklentilerinizi en üst seviyede karşılıyoruz.', 'Peyzaj düzenlemelerinin uzun vadeli başarısını garanti altına almak için bakım ve yenileme hizmetleri de sunuyoruz. Alanlarınıza estetik değer kazandırırken doğal dengenin korunmasına önem veriyoruz.', 'uploads/sd.jpg');
+
+-- tablo yapısı dökülüyor incebel_db.site_settings
+CREATE TABLE IF NOT EXISTS `site_settings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `logo_path` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- incebel_db.site_settings: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `site_settings` (`id`, `logo_path`, `created_at`, `updated_at`) VALUES
+	(1, '../assets/img/logo.png', '2024-12-29 01:36:00', '2024-12-29 01:36:00');
+
+-- tablo yapısı dökülüyor incebel_db.ucuncubolum
+CREATE TABLE IF NOT EXISTS `ucuncubolum` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `foto` char(50) DEFAULT NULL,
+  `baslik` char(50) DEFAULT NULL,
+  `paragraf` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+-- incebel_db.ucuncubolum: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+INSERT INTO `ucuncubolum` (`id`, `foto`, `baslik`, `paragraf`) VALUES
+	(1, 'uploads/incebel-3.jpg', 'İşimizi Zamanında ve Eksiksiz Tamamlıyoruz', '        Zamanında teslimat, işimize gösterdiğimiz özenin en somut göstergelerinden biridir. Proje takvimlerine sadık\r\n          kalarak, harfiyat süreçlerini planlanan sürede tamamlamak için titizlikle çalışıyoruz. Aynı zamanda, işin her\r\n          aşamasında eksiksiz bir hizmet sunmayı hedefliyoruz. Bu, müşterilerimizin memnuniyetini sağlamamızın temel\r\n          taşlarından biridir.');
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

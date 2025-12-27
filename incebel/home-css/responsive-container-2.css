@@ -1,0 +1,181 @@
+/* responsive tanıtım sayfası start */
+
+.responsive-container-two {
+  display: flex;
+  justify-content: center;
+  /* Blokları ortala */
+  align-items: center;
+  /* Dikey olarak ortala */
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 60px;
+  /* Bloklar arasında boşluk ekle */
+  margin: 0px 150px;
+  position: relative;
+  top: 150px;
+}
+
+.content-block-two {
+  flex: 1;
+  max-width: 950px;
+  /* Sol bloğun genişliği */
+  text-align: start;
+  /* Metinleri ortala */
+  position: relative;
+  bottom: 100px;
+}
+
+.content-block-two h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 500;
+
+}
+
+.content-block-two img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+
+}
+
+.content-block-two p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+
+}
+
+.button-group-two {
+  display: flex;
+  justify-content: flex-start;
+  /* Butonları ortala */
+  gap: 10px;
+
+}
+
+.button-group-two button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button-group-two .button-first-two {
+  width: 220px;
+  color: black;
+  position: relative;
+  background-color: white;
+  border: 1px solid black
+}
+
+.button-group-two .button-second-two {
+  background-color: #ffc700;
+  color: black;
+  width: 200px;
+  border: none;
+  border: 1px solid black
+}
+
+/* 2. Blok stili */
+.right-image-two {
+  flex: 0 0 700px;
+  /* Sağ bloğun genişliği */
+  max-width: 100%;
+  /* Ekran genişliğine göre uyumlu olacak şekilde */
+}
+
+.right-image-two img {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Başlangıç stilleri (animasyon öncesi) */
+.left-content-two, .right-image-two {
+  opacity: 0; /* Görünmez başlangıç */
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.left-content-two {
+  transform: translateX(-50px); /* Sol blok sola kayık */
+}
+
+.right-image-two {
+  transform: translateX(50px); /* Sağ blok sağa kayık */
+}
+
+/* Görünür olduğunda */
+.left-content-two.animate, .right-image-two.animate {
+  opacity: 1; /* Görünür */
+  transform: translateX(0); /* Orijinal pozisyon */
+}
+
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  .responsive-container-two {
+    flex-direction: column;
+    align-items: center;
+    /* Mobilde dikey ortala */
+    gap: 40px;
+    /* Alanı azaltmak için boşluğu küçült */
+    margin: 0;
+  }
+
+  .content-block-two {
+    width: 100%;
+    /* Genişliği %100 yap */
+    /* Alt boşluğu sıfırla */
+    position: relative;
+    top: 80px;
+    /* Yukarıya kaydırma */
+  }
+
+  .button-group-two button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    bottom: 120px;
+  }
+  
+  .content-block-two h1 {
+    width: 100%;
+    /* Genişliği %100 yap */
+    /* Alt boşluğu sıfırla */
+    position: relative;
+    bottom: 180px;
+    /* Yukarıya kaydırma */
+  }
+
+  .content-block-two p {
+    width: 100%;
+    /* Genişliği %100 yap */
+    /* Alt boşluğu sıfırla */
+    position: relative;
+    bottom: 180px;
+    /* Yukarıya kaydırma */
+  }
+
+  .right-image-two {
+    flex: 0 0 700px;
+    /* Sağ bloğun genişliği */
+    max-width: 100%;
+    /* Ekran genişliğine göre uyumlu olacak şekilde */
+  }
+
+  .right-image-two img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 5px;
+    /* Resmin altında boşluk bırakma */
+  }
+
+  .call-icon {
+    bottom: 15px;
+    /* İkonu daha yukarıda tut */
+    right: 15px;
+    /* Sağdan biraz içeride */
+  }
+}

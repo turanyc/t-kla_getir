@@ -1,0 +1,20 @@
+{
+    "exclude": {
+        "files": [
+            "skin.jpg",
+            "skin-setup.php",
+            "skin-demo-importer.php",
+            "css/__custom.css",
+            "theme-specific/trx_addons-layouts.php",
+            "skin-upgrade-style.css",
+            "skin-upgrade-style.scss",
+            "skin-upgrade-style.css.map"
+        ],
+        "folders": [
+            "theme-specific/theme-about",
+            "languages",
+            "css/font-face",
+            "css/font-icons"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+[06-Dec-2025 18:15:24 Europe/Istanbul] PHP Warning:  require_once(../config/database.php): Failed to open stream: No such file or directory in /home/u2495148/public_html/business/api/toggle_business_status.php on line 3
+[06-Dec-2025 18:15:24 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Failed opening required '../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u2495148/public_html/business/api/toggle_business_status.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/u2495148/public_html/business/api/toggle_business_status.php on line 3
+[06-Dec-2025 18:15:30 Europe/Istanbul] PHP Warning:  require_once(../config/database.php): Failed to open stream: No such file or directory in /home/u2495148/public_html/business/api/toggle_business_status.php on line 3
+[06-Dec-2025 18:15:30 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Failed opening required '../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u2495148/public_html/business/api/toggle_business_status.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/u2495148/public_html/business/api/toggle_business_status.php on line 3

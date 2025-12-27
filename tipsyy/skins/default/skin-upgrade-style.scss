@@ -1,0 +1,67 @@
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+@import "css/_skin-vars.scss";
+
+//---general styles
+.search-no-results .page_content_wrap,
+.error404 .page_content_wrap {
+    background-color: var(--theme-color-bg_color);
+}
+//--map marker -style-2
+.map_marker_2 {
+    width: 70px;
+    height: 70px;
+    background-color: var(--theme-color-inverse_hover);
+    &:before {
+        color: var(--theme-color-input_dark);
+    }
+}
+//--verification popup
+.adp-popup-type-content.adp-popup-open .sc_button.adp-popup-close {
+    position: unset;
+    color: var(--theme-color-inverse_link) !important;
+    &:before {
+        display: none;
+    }
+}
+
+//---widget styles
+//--price -pain style
+.sc_price_plain .sc_price_item {
+    @include box-shadow(none);
+}
+//--mailChimpForm -style 5
+#style-5.mc4wp-form {
+    label {
+        color: var(--theme-color-text_dark);
+        a {
+            color: var(--theme-color-text_dark);
+            border-color: var(--theme-color-text_dark);
+            &:hover {
+                color: var(--theme-color-text_dark_08);
+                border-color: var(--theme-color-text_dark_08);
+            }
+        }
+    }
+    input[type="checkbox"] + label:before {
+        border-color: var(--theme-color-input_dark) !important;
+    }
+    .mc4wp-form-fields button,
+    .mc4wp-form-fields input[type="submit"] {
+        &:before {
+            color: var(--theme-color-text_dark);
+        }
+        &:hover:before {
+            color: var(--theme-color-text_dark_08);
+        }
+    }
+}
+
+//---responsive styles
+//--@mixin theme--sm(767)
+@media #{$media_sm} {
+    //--hide <br>
+    .hide-br .sc_item_title br {
+        display: none;
+    }
+}

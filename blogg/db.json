@@ -1,0 +1,89 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Sad\u0131k Turan",
+            "username": "sadikturan",
+            "password": "1234",
+            "email": "info@sadikturan.com"
+        },
+        {
+            "id": 2,
+            "name": "\u00c7\u0131nar Turan",
+            "username": "cinarturan",
+            "password": "1234",
+            "email": "info@cinarturan.com"
+        },
+        {
+            "id": 3,
+            "name": "Sena Turan",
+            "username": "senaturan",
+            "password": "1234",
+            "email": "info@senaturan.com"
+        },
+        {
+            "id": 4,
+            "username": "adabilgi",
+            "password": "1234",
+            "name": "ada bilgi",
+            "email": "info@adabilgi.com"
+        },
+        {
+            "id": 5,
+            "username": "yigitbilgi",
+            "password": "1234",
+            "name": "yi\u011fit bilgi",
+            "email": "info@yigitbilgi.com"
+        }
+    ],
+    "movies": [
+        {
+            "id": 1,
+            "title": "film 1",
+            "description": "film 1 a\u00e7\u0131klama",
+            "url": "film-11",
+            "image-url": "1.jpeg",
+            "likes": 10,
+            "comments": 5,
+            "is-active": false
+        },
+        {
+            "id": 2,
+            "title": "film 3",
+            "description": "film 3 a\u00e7\u0131klama",
+            "url": "film-3",
+            "image-url": "3.jpeg",
+            "likes": 5,
+            "comments": 0,
+            "is-active": true
+        },
+        {
+            "id": 3,
+            "title": "film 4",
+            "description": "ff",
+            "image-url": "ff",
+            "url": "f",
+            "likes": 0,
+            "comments": 0,
+            "is-active": false
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Macera"
+        },
+        {
+            "id": 2,
+            "name": "Dram"
+        },
+        {
+            "id": 3,
+            "name": "Komedi"
+        },
+        {
+            "id": 4,
+            "name": "Korku"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+[07-Dec-2025 17:29:49 Europe/Istanbul] PHP Warning:  Undefined array key "paytr_merchant_id" in /home/u2495148/public_html/admin/settings.php on line 186
+[07-Dec-2025 17:29:49 Europe/Istanbul] PHP Warning:  Undefined array key "paytr_merchant_key" in /home/u2495148/public_html/admin/settings.php on line 194
+[07-Dec-2025 17:29:49 Europe/Istanbul] PHP Warning:  Undefined array key "paytr_merchant_salt" in /home/u2495148/public_html/admin/settings.php on line 202
+[07-Dec-2025 17:29:49 Europe/Istanbul] PHP Warning:  Undefined array key "paytr_test_mode" in /home/u2495148/public_html/admin/settings.php on line 208
+[07-Dec-2025 17:29:49 Europe/Istanbul] PHP Warning:  Undefined array key "commission" in /home/u2495148/public_html/admin/settings.php on line 246

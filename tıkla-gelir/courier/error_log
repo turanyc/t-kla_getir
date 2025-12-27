@@ -1,0 +1,10 @@
+[07-Dec-2025 06:44:19 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cp.order_id' in 'ON' in /home/u2495148/public_html/courier/reports.php:49
+Stack trace:
+#0 /home/u2495148/public_html/courier/reports.php(49): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u2495148/public_html/courier/reports.php on line 49
+[07-Dec-2025 16:23:05 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cp.order_id' in 'ON' in /home/u2495148/public_html/courier/reports.php:49
+Stack trace:
+#0 /home/u2495148/public_html/courier/reports.php(49): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u2495148/public_html/courier/reports.php on line 49
